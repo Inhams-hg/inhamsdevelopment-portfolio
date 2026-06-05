@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Ibrahim Nura | Full Stack Developer</title>
-    <meta name="description" content="Learn more about Ibrahim Nura, a Full Stack Developer with expertise in Firebase, Mobile Apps, and Web Development.">
+    <title>Article - Ibrahim Nura</title>
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://inhamsdevelopment.com/about">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/blog-details.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +27,10 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li>
                     <button class="theme-toggle" id="themeToggle">
@@ -56,81 +54,36 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Article Header -->
+    <section class="article-header">
         <div class="container">
-            <h1>About Me</h1>
-            <p>Get to know me better</p>
-        </div>
-    </section>
-
-    <!-- About Hero -->
-    <section class="about-hero">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="assets/images/about-hero.jpg" alt="Ibrahim Nura">
-                </div>
-                <div class="about-text">
-                    <h2>Ibrahim Nura</h2>
-                    <p class="about-title">Full Stack Developer | Mobile App Developer | Firebase Engineer</p>
-                    <p class="about-intro">I'm a passionate developer based in Katsina, Nigeria, dedicated to creating innovative digital solutions that solve real-world problems.</p>
-                    <p>With a strong foundation in full-stack development, I specialize in building robust web applications and mobile solutions using modern technologies and best practices.</p>
-                    <div class="about-contact">
-                        <a href="mailto:inhamsdevelopment@gmail.com" class="contact-item">
-                            <span class="label">Email:</span>
-                            <span class="value">inhamsdevelopment@gmail.com</span>
-                        </a>
-                        <a href="tel:+2347077504820" class="contact-item">
-                            <span class="label">Phone:</span>
-                            <span class="value">+2347077504820</span>
-                        </a>
-                        <p class="contact-item">
-                            <span class="label">Location:</span>
-                            <span class="value">Katsina, Nigeria</span>
-                        </p>
-                    </div>
-                </div>
+            <a href="blog.html" class="back-link">← Back to Blog</a>
+            <div class="article-meta" id="articleMeta">
+                <!-- Article header will be loaded from Firebase -->
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience-section">
+    <!-- Article Content -->
+    <section class="article-content">
         <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="experience-timeline" id="experienceTimeline">
-                <!-- Experience will be loaded from Firebase -->
+            <div class="content-grid">
+                <article class="article-body" id="articleBody">
+                    <!-- Article content will be loaded -->
+                </article>
+                <aside class="article-sidebar" id="articleSidebar">
+                    <!-- Sidebar content will be loaded -->
+                </aside>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="education-section">
+    <!-- Related Articles -->
+    <section class="related-articles">
         <div class="container">
-            <h2>Education</h2>
-            <div class="education-grid" id="educationGrid">
-                <!-- Education will be loaded from Firebase -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-detailed" id="skillsDetailed">
-                <!-- Skills will be loaded from Firebase -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="certifications-section">
-        <div class="container">
-            <h2>Certifications & Achievements</h2>
-            <div class="certifications-grid" id="certificationsGrid">
-                <!-- Certifications will be loaded from Firebase -->
+            <h2>Related Articles</h2>
+            <div class="related-grid" id="relatedArticles">
+                <!-- Related articles will be loaded -->
             </div>
         </div>
     </section>
@@ -178,11 +131,9 @@
     <script src="firebase/firebase-config.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/animations.js"></script>
-    <script src="firebase/experience.js"></script>
-    <script src="firebase/education.js"></script>
-    <script src="firebase/skills.js"></script>
-    <script src="firebase/certifications.js"></script>
+    <script src="firebase/blogs.js"></script>
     <script src="firebase/social-links.js"></script>
+    <script src="assets/js/blog-details.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

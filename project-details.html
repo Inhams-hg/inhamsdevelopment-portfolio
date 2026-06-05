@@ -4,124 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - Ibrahim Nura</title>
-    <meta name="description" content="Detailed view of a project by Ibrahim Nura">
-    <link rel="canonical" href="https://inhamsdevelopment.com/project-details">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/project-details.css">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#1a1a2e">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/project-details.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-logo">ID</span>
-                <span class="brand-text">Inhams Development</span>
+        <div class="container navbar-container">
+            <div class="navbar-brand">
+                <a href="/" class="brand-logo">Inhams</a>
+                <span class="brand-subtitle">Development</span>
             </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about.html" class="nav-link">About</a>
-                <a href="/projects.html" class="nav-link active">Projects</a>
-                <a href="/services.html" class="nav-link">Services</a>
-                <a href="/blog.html" class="nav-link">Blog</a>
-                <a href="/contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Project Details -->
-    <section class="project-details" id="projectDetails">
+    <!-- Project Hero -->
+    <section class="project-hero">
         <div class="container">
-            <!-- Loading skeleton -->
-            <div class="skeleton-loader" id="skeletonLoader"></div>
-            <!-- Project content will load here -->
+            <a href="projects.html" class="back-link">← Back to Projects</a>
+            <div class="project-header" id="projectHeader">
+                <!-- Project details will be loaded from Firebase -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery" id="projectGallery">
+        <!-- Gallery will be loaded from Firebase -->
+    </section>
+
+    <!-- Project Details Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="project-description" id="projectDescription">
+                    <!-- Description will be loaded -->
+                </div>
+                <div class="project-info" id="projectInfo">
+                    <!-- Info will be loaded -->
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Related Projects -->
-    <section class="related-projects" id="relatedProjects">
+    <section class="related-projects">
         <div class="container">
-            <h2 class="section-title">Related Projects</h2>
-            <div class="projects-grid" id="relatedProjectsGrid">
-                <!-- Related projects will load from Firebase -->
+            <h2>Related Projects</h2>
+            <div class="related-grid" id="relatedProjects">
+                <!-- Related projects will be loaded -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Inhams Development</h3>
-                    <p>Building Innovative Digital Solutions for the Modern World</p>
-                    <div class="social-links" id="socialLinks">
-                        <!-- Social links will load from Firebase -->
-                    </div>
+                    <h3>Ibrahim Nura</h3>
+                    <p>Full Stack Developer | Mobile App Developer | Firebase Engineer</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Navigation</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/projects.html">Projects</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="/terms.html">Terms & Conditions</a></li>
-                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="mailto:inhamsdevelopment@gmail.com">Email</a></li>
-                        <li><a href="tel:+2347077504820">Phone</a></li>
-                        <li><a href="#">Location</a></li>
-                    </ul>
+                    <h4>Follow Me</h4>
+                    <div class="social-links" id="socialLinks"></div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Ibrahim Nura. All rights reserved.</p>
+                <p>&copy; 2026 Inhams Development. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/firebase/firebase-config.js"></script>
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/utils.js"></script>
-    <script src="/firebase/auth.js"></script>
-    <script src="/firebase/projects.js"></script>
-    <script src="/assets/js/project-details.js"></script>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="firebase/firebase-config.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="firebase/projects.js"></script>
+    <script src="firebase/social-links.js"></script>
+    <script src="assets/js/project-details.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

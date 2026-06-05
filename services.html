@@ -4,61 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Ibrahim Nura | Full Stack Developer</title>
-    <meta name="description" content="Professional development services including Web Development, Mobile App Development, Firebase Solutions, and more.">
+    <meta name="description" content="Professional services including web development, mobile apps, Firebase solutions, and more.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://inhamsdevelopment.com/services">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/services.css">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#1a1a2e">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-logo">ID</span>
-                <span class="brand-text">Inhams Development</span>
+        <div class="container navbar-container">
+            <div class="navbar-brand">
+                <a href="/" class="brand-logo">Inhams</a>
+                <span class="brand-subtitle">Development</span>
             </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about.html" class="nav-link">About</a>
-                <a href="/projects.html" class="nav-link">Projects</a>
-                <a href="/services.html" class="nav-link active">Services</a>
-                <a href="/blog.html" class="nav-link">Blog</a>
-                <a href="/contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Services</h1>
-            <p>Professional Development Solutions</p>
+            <h1>My Services</h1>
+            <p>Professional solutions tailored to your needs</p>
         </div>
     </section>
 
@@ -66,98 +68,104 @@
     <section class="services-section">
         <div class="container">
             <div class="services-grid" id="servicesGrid">
-                <!-- Services will load from Firebase -->
+                <!-- Services will be loaded from Firebase -->
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
+    <!-- Service Process -->
+    <section class="service-process">
         <div class="container">
-            <h2 class="section-title">My Process</h2>
+            <h2>My Process</h2>
             <div class="process-grid">
-                <div class="process-card">
-                    <div class="process-number">01</div>
+                <div class="process-step">
+                    <div class="step-number">01</div>
                     <h3>Discovery</h3>
-                    <p>Understand your vision and requirements</p>
+                    <p>Understanding your goals, challenges, and requirements in detail</p>
                 </div>
-                <div class="process-card">
-                    <div class="process-number">02</div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
                     <h3>Planning</h3>
-                    <p>Create a detailed roadmap for success</p>
+                    <p>Creating a comprehensive roadmap and technical specifications</p>
                 </div>
-                <div class="process-card">
-                    <div class="process-number">03</div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
                     <h3>Development</h3>
-                    <p>Build with cutting-edge technologies</p>
+                    <p>Building your solution with clean code and best practices</p>
                 </div>
-                <div class="process-card">
-                    <div class="process-number">04</div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
                     <h3>Testing</h3>
-                    <p>Ensure quality and performance</p>
+                    <p>Rigorous quality assurance and performance optimization</p>
                 </div>
-                <div class="process-card">
-                    <div class="process-number">05</div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
                     <h3>Deployment</h3>
-                    <p>Launch with confidence</p>
+                    <p>Seamless launch and deployment to production environments</p>
                 </div>
-                <div class="process-card">
-                    <div class="process-number">06</div>
+                <div class="process-step">
+                    <div class="step-number">06</div>
                     <h3>Support</h3>
-                    <p>Ongoing maintenance and improvements</p>
+                    <p>Ongoing maintenance, updates, and technical support</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's discuss how I can help you achieve your goals</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Inhams Development</h3>
-                    <p>Building Innovative Digital Solutions for the Modern World</p>
-                    <div class="social-links" id="socialLinks">
-                        <!-- Social links will load from Firebase -->
-                    </div>
+                    <h3>Ibrahim Nura</h3>
+                    <p>Full Stack Developer | Mobile App Developer | Firebase Engineer</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Navigation</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/projects.html">Projects</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="/terms.html">Terms & Conditions</a></li>
-                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="mailto:inhamsdevelopment@gmail.com">Email</a></li>
-                        <li><a href="tel:+2347077504820">Phone</a></li>
-                        <li><a href="#">Location</a></li>
-                    </ul>
+                    <h4>Follow Me</h4>
+                    <div class="social-links" id="socialLinks"></div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Ibrahim Nura. All rights reserved.</p>
+                <p>&copy; 2026 Inhams Development. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/firebase/firebase-config.js"></script>
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/utils.js"></script>
-    <script src="/firebase/auth.js"></script>
-    <script src="/assets/js/services.js"></script>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="firebase/firebase-config.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="firebase/services.js"></script>
+    <script src="firebase/social-links.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
